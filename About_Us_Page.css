@@ -18,14 +18,14 @@ body {
     margin: 0;
     grid-template-areas:
         "l n n n n n n n n n n n n r"
-        "l a a a a a a t t t t t t r"
-        "l a a a a a a t t t t t t r"
-        "l a a a a a a t t t t t t r"
-        "l a a a a a a t t t t t t r"
-        "l c c c c c c c c c c c c r"
-        "l c c c c c c c c c c c c r"
-        "l c c c c c c c c c c c c r"
-        "l c c c c c c c c c c c c r"
+        "l a a a a a . . t t t t t r"
+        "l a a a a a . . t t t t t r"
+        "l a a a a a . . t t t t t r"
+        "l a a a a a . .  t t t t t r"
+        "l . c c c c c c c c c c . r"
+        "l . c c c c c c c c c c . r"
+        "l . c c c c c c c c c c . r"
+        "l . c c c c c c c c c c . r"
         "l f f f f f f f f f f f f r"
 }
 
@@ -42,25 +42,24 @@ body {
     background-image: url(wallpaper.jpg);
     height: 100%;
     width: 200px;
-    float: right;
 }
 
 .About-Us {
-    background-color: #0075BE;
+    background: linear-gradient(90deg, #0075BE, #ffcb05);
     text-align: center;
     grid-area: a;
+    border-radius: 20px;
 }
 
 .Team-Members {
     background-color: #ffcb05;
     text-align: center;
-
     grid-area: t;
 }
 
 .Contact-Us {
     text-align: center;
-
+    background: linear-gradient(#ffcb05, #0075BE);
     grid-area: c;
 }
 
