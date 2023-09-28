@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 100px repeat(3, 1fr) 100px;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    grid-template-areas:
+        "l n n n n n n n n n r"
+        "l a a a a . t t t t r"
+        "l a a a a . t t t t r"
+        "l c c c c c c c c c r"
+        "l f f f f f f f f f r"
+}
+
+.left {
+    grid-area: l;
+    background-image: url(wallpaper.jpg);
+    height: 100%;
+    width: 200px;
+    justify-items: start;
+}
+
+.right {
+    grid-area: r;
+    background-image: url(wallpaper.jpg);
+    height: 100%;
+    width: 200px;
+    float: right;
+}
+
+.About-Us {
+    grid-area: a;
+}
+
+.Team-Members {
+    grid-area: t;
+}
+
+.Contact-Us {
+    grid-area: c;
+}
+
+.Nav {
+    grid-area: n;
+}
+
+footer {
+    grid-area: f;
+    background-color: red;
+}
+
+header {
+    overflow: hidden;
+}
