@@ -12,17 +12,22 @@ body {
     font-family: 'Orbitron';
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: 100px repeat(12, 2fr) 300px;
+    grid-template-rows: 100px repeat(17, 2fr) 300px;
     height: 200vh;
     width: 100vw;
     margin: 0;
     grid-template-areas:
         "l n n n n n n n n n n n n r"
         "l . . . . . . . . . . . . r"
-        "l . a a a a . . t t t t . r"
-        "l . a a a a . . t t t t . r"
-        "l . a a a a . . t t t t . r"
-        "l . a a a a . . t t t t . r"
+        "l a a a a a a a a a a a . r"
+        "l a a a a a a a a a a a . r"
+        "l a a a a a a a a a a a . r"
+        "l a a a a a a a a a a a . r"
+        "l . . . . . . . . . . . . r"
+        "l . t t t t t t t t t t t r"
+        "l . t t t t t t t t t t t r"
+        "l . t t t t t t t t t t t r"
+        "l . t t t t t t t t t t t r"
         "l . . . . . . . . . . . . r"
         "l . c c c c c c c c c c . r"
         "l . c c c c c c c c c c . r"
@@ -53,8 +58,10 @@ body {
 }
 
 .About-Us {
+    font-size: 2.5rem;
     /* background: linear-gradient(90deg, #0075BE, #ffcb05); */
     margin: 10px;
+    margin-left: 0;
     background-color: #0075BE;
     text-align: center;
     grid-area: a;
@@ -66,8 +73,12 @@ body {
 }
 
 .Team-Members {
+    font-size: 2.5rem;
+
     /* background: linear-gradient(90deg, #ffcb05, #0075BE); */
     margin: 10px;
+    margin-right: 0;
+
     border-radius: 20px;
     box-shadow: 3px 3px;
     background-color: #ffcb05;
@@ -80,6 +91,8 @@ body {
 }
 
 .Contact-Us {
+    font-size: 2.5rem;
+
     margin: 10px;
     background-color: #FB1B1B;
     text-align: center;
