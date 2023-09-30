@@ -24,10 +24,6 @@ body {
         "l c r"
         "l f r"
         "l f r";
-
-
-
-
 }
 
 .left {
@@ -35,8 +31,6 @@ body {
     background-image: url(wallpaper.jpg);
     height: 100%;
     width: 200px;
-    justify-items: start;
-    border-right: solid;
 }
 
 .right {
@@ -44,21 +38,22 @@ body {
     background-image: url(wallpaper.jpg);
     height: 100%;
     width: 200px;
-    border-left: solid;
 
 }
 
 .group-pic-container {
     display: flex;
+    box-sizing: border-box;
     grid-area: g;
     justify-content: center;
     align-content: center;
     width: 100%;
+    background: linear-gradient(#ffffff 90%, #0075BE);
+
 }
 
 .group-pic-container>img {
     height: 600px;
-    width: 800px;
     margin-top: 10rem;
     box-shadow: 3px 3px;
     margin-bottom: 20rem;
@@ -184,6 +179,7 @@ footer {
     text-align: center;
     grid-area: f;
     background-color: black;
+    background: linear-gradient(white, black 5%);
 }
 
 footer>img {
