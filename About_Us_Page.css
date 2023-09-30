@@ -12,12 +12,13 @@ body {
     font-family: 'Orbitron';
     display: grid;
     grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 100px repeat(3, 1fr) 300px;
-    height: 350vh;
+    grid-template-rows: 100px repeat(4, 1fr) 300px;
+    height: 100vh;
     width: 100vw;
     margin: 0;
     grid-template-areas:
         "l n r"
+        "l g r"
         "l a r"
         "l t r"
         "l c r"
@@ -45,22 +46,39 @@ body {
 
 }
 
+.group-pic-container {
+    display: flex;
+    grid-area: g;
+    justify-content: center;
+}
+
+.group-pic-container>img {
+    height: 600px;
+    margin-top: 10rem;
+    box-shadow: 3px 3px;
+    margin-bottom: 20rem;
+    border-style: double;
+    border-width: 10px;
+
+}
+
 .about-us-container {
+    display: flex;
     grid-area: a;
+    margin-bottom: 10px;
 }
 
 .about-us {
-    margin-top: 10rem;
     display: flex;
     /* background: linear-gradient(90deg, #0075BE, #ffcb05); */
     width: 80%;
-    height: 50%;
     background-color: #0075BE;
     box-shadow: 3px 3px;
     border-style: double;
     border-width: 10px;
     justify-content: space-evenly;
     border-left: none;
+    height: 900px;
 }
 
 .about-us-text {
@@ -96,7 +114,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 80%;
-    height: 50%;
     font-size: 2.5rem;
     box-shadow: 3px 3px;
     background-color: #ffcb05;
@@ -104,8 +121,9 @@ body {
     border-style: double;
     border-width: 10px;
     width: 80%;
-    height: 50%;
     border-right: none;
+    height: 900px;
+
 }
 
 .team-members-text {
