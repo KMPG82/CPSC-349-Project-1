@@ -7,8 +7,6 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
-
 body {
     background-color: #ffffff;
     font-family: 'Orbitron';
@@ -70,6 +68,7 @@ body {
     width: 300px;
     margin-left: 10px;
     color: rgb(0, 0, 0);
+
 }
 
 .about-us {
@@ -107,7 +106,6 @@ body {
 
 .team-members {
     box-sizing: border-box;
-
     grid-area: team;
     background-color: #ffcb05;
     background: linear-gradient(#0075BE, #ffcb05 2%);
@@ -116,13 +114,24 @@ body {
     min-height: 550px;
     justify-content: space-evenly;
     width: 100%;
-
 }
 
 .team-members-text {
     overflow: auto;
     text-align: center;
     width: 700px;
+}
+
+.name-list {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name-list li {
+    width: 400px;
+    align-self: center;
 }
 
 .pikachu {
@@ -132,12 +141,10 @@ body {
 
 .contact-us {
     box-sizing: border-box;
-
     grid-area: contact;
     font-size: 2.5rem;
     background-color: #FB1B1B;
     background: linear-gradient(#ffcb05, #FB1B1B 2%);
-
     text-align: center;
     min-height: 550px;
     width: 100%;
@@ -145,16 +152,65 @@ body {
 }
 
 footer {
+    position: relative;
+    display: flex;
     box-sizing: border-box;
     grid-area: footer;
     background-color: #000000;
-    text-align: center;
     width: 100%;
+    color: white;
+    justify-content: center;
 }
 
-footer>img {
+.footer-group {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.pokeball {
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 50px
+}
+
+.footer-logo {
     width: 200px;
     height: 200px;
+}
+
+.copyright {
+    position: relative;
+    bottom: 50px;
+}
+
+.footer-ul {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    bottom: 70px;
+    right: 25px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.footer-link {
+    border-right: solid;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.footer-last-link {
+    border-right: none;
+    padding-left: 20px;
+    text-transform: uppercase;
 }
 
 /* .left {
