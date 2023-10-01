@@ -13,20 +13,129 @@ body {
     background-color: #ffffff;
     font-family: 'Orbitron';
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px repeat(5, 1fr) 300px;
-    height: 100vh;
+    min-height: auto;
     width: 100%;
     margin: 0;
-
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto auto auto 300px;
+    /* repeat(4, auto) */
     grid-template-areas:
-        " n "
-        " g "
-        " a "
-        " t "
-        " c "
-        " f "
-        " f ";
+        "nav"
+        "main"
+        "about"
+        "team"
+        "contact"
+        "footer";
+}
+
+.nav {
+    grid-area: nav;
+    background-color: gray;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10rem; */
+    margin-bottom: 15rem;
+    justify-self: center;
+    width: 2463px;
+    min-height: 800px;
+    background-image: url(wallpaper.jpg);
+    padding: 40px;
+    align-items: center;
+}
+
+.group {
+    height: 600px;
+    border-width: 15px;
+
+}
+
+
+
+.main>h1 {
+    font-size: 80px;
+    width: 300px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.about-us {
+    grid-area: about;
+    background-color: #0075BE;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 550px;
+    justify-content: space-evenly;
+
+}
+
+.about-us-text {
+    overflow: auto;
+    text-align: center;
+    width: 700px;
+}
+
+.about-us-text h2,
+.team-members h2 {
+    font-size: 2.5rem;
+}
+
+.about-us-text p,
+.team-members p {
+    font-size: 2rem;
+}
+
+.squirtle {
+    height: 500px;
+}
+
+.team-members {
+    grid-area: team;
+    background-color: #ffcb05;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    min-height: 550px;
+    justify-content: space-evenly;
+
+
+}
+
+.team-members-text {
+    overflow: auto;
+    text-align: center;
+    width: 700px;
+}
+
+.pikachu {
+    height: 500px;
+    align-self: center;
+}
+
+.contact-us {
+    grid-area: contact;
+    font-size: 2.5rem;
+    background-color: #FB1B1B;
+    text-align: center;
+    border-bottom: double;
+    border-width: 15px;
+    min-height: 550px;
+
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: #000000;
+    text-align: center;
+
+}
+
+footer>img {
+    width: 200px;
+    height: 200px;
 }
 
 /* .left {
@@ -42,7 +151,12 @@ body {
     height: 100%;
     width: 200px;
 
-} */
+} 
+
+.nav {
+    height: 100px;
+    width: 100%;
+}
 
 .main {
     margin-top: 15rem;
@@ -76,10 +190,10 @@ body {
     display: flex;
     background-color: #0075BE;
     flex-wrap: wrap;
-    /* border-style: double; */
     justify-content: space-evenly;
     width: 100%;
     min-height: 700px;
+    height: fit-content;
 }
 
 .about-us-text {
@@ -100,9 +214,9 @@ body {
 }
 
 .squirtle {
-    height: 400px;
+    height: auto;
     align-self: center;
-    margin-right: 20px;
+
 }
 
 .team-members {
@@ -112,7 +226,6 @@ body {
     flex-wrap: wrap-reverse;
 
     justify-content: space-evenly;
-    font-size: 2.5rem;
     background-color: #ffcb05;
     width: 100%;
     min-height: 700px;
@@ -129,9 +242,8 @@ body {
 .pikachu {
     position: relative;
     bottom: 10px;
-    height: 400px;
+    height: 500px;
     align-self: center;
-    margin-left: 20px;
 }
 
 .contact-us-container {
@@ -148,16 +260,10 @@ body {
     font-size: 2.5rem;
     background-color: #FB1B1B;
     text-align: center;
-    /* background: radial-gradient(#ffcb05, #0075BE); */
     width: 100%;
     height: 500px;
     margin-bottom: 200px;
 
-}
-
-.nav {
-    background-color: gray;
-    grid-area: n;
 }
 
 footer {
@@ -167,11 +273,9 @@ footer {
     background: linear-gradient(white, black 5%);
 }
 
-footer>img {
-    width: 200px;
-    height: 200px;
-}
+
 
 header {
     overflow: hidden;
 }
+*/
