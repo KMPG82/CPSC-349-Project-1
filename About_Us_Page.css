@@ -177,7 +177,7 @@ body {
     flex-direction: column;
     height: 700px;
     border-width: 15px;
-    box-shadow: 8px 8px;
+    box-shadow: -8px 8px 0px 0px;
     width: 900px;
     box-sizing: border-box;
     padding-bottom: 30px;
@@ -235,6 +235,9 @@ body {
     resize: none;
 }
 
+.charmander {
+    height: 500px;
+}
 
 footer {
     position: relative;
